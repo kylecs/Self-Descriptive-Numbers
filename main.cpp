@@ -5,11 +5,17 @@
 
 using namespace std;
 
+/*
+ Pair of two numbers, one descriptor and one number
+*/
 typedef struct num_group {
 	int desc;
 	int num;
 } t_num_group;
 
+/*
+Check a number for self description, takes a vector of t_num_group and the original number
+*/
 bool checkNumber(unsigned long long int number, vector<t_num_group> groups) {
 	//check for duplicates
 	for (int i = 0; i < groups.size(); i++) {
@@ -43,6 +49,9 @@ bool checkNumber(unsigned long long int number, vector<t_num_group> groups) {
 	}
 	return true;
 }
+/*
+Main function, iterates through all numbers with an even number of digits and calls the checking function on that number.
+*/
 int main() {
 	ofstream out;
 	out.open("output.txt");
