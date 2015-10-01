@@ -2,14 +2,13 @@
 #include <string>
 #include <vector>
 #include <fstream>
-using namespace std;
 
+using namespace std;
 
 typedef struct num_group {
 	int desc;
 	int num;
 } t_num_group;
-
 
 bool checkNumber(unsigned long long int number, vector<t_num_group> groups) {
 	//check for duplicates
@@ -44,8 +43,6 @@ bool checkNumber(unsigned long long int number, vector<t_num_group> groups) {
 	}
 	return true;
 }
-
-
 int main() {
 	ofstream out;
 	out.open("output.txt");
