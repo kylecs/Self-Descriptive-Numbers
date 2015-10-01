@@ -68,8 +68,6 @@ int main() {
 				temp.num = str[i + 1] - '0';
 				groups.push_back(temp);
 			}
-			//cout << "Checking " << full << endl;
-			//system("pause");
 			if (checkNumber(full, groups)) {
 				cout << "Found: " << full << endl;
 				out << full << endl;
