@@ -1,4 +1,4 @@
-Self Describing Numbers
+#Self Describing Numbers
 
 This is a program that will iterate over all numbers between 0 and the maximum value of unsigned long long int and check them
 for the property of self description.
